@@ -11,3 +11,8 @@ $ npm i -g @solothought/float
 - first coloum shows the execution time of flow and each step
 - All the steps which are not executed are greyed out.
 - You must define the template of your log data, path of flow file, and flow log data
+
+Use
+```bash
+grep FLOW flowgger.log | grep "Flow Name" | head -1 | fla -d flows -t templates/task_template.txt
+```
