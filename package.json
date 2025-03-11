@@ -1,0 +1,44 @@
+{
+  "name": "@solothought/float",
+  "version": "1.0.0",
+  "description": "CLI command to analyze Flowgger logs",
+  "type": "module",
+  "publishConfig": {
+		"access": "public"
+	},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "fla": "./float.js"
+  },
+  "files": [
+    "src",
+		"README.md",
+		"LICENSE",
+		"static/image.png"
+	],
+  "keywords": [
+    "flowgger",
+    "logs",
+    "analysis",
+    "stflow",
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/solothought/float"
+  },
+  "author": "Amit Gupta (https://solothought.com)",
+  "license": "MIT",
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/solothought"
+    }
+  ],
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0"
+  }
+}

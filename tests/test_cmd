@@ -1,0 +1,6 @@
+echo "FLOW [2025-03-10T03:51:17.361Z] 1741578677360-z0ivkoo [Get All Tasks] 0.0.1 0:0>1:0>3:0 340 1   " | ./float -f tests/flows/taskManage.stflow -t tests/task_template.txt
+
+echo "FLOW [2025-03-10T03:51:17.361Z] 1741578677360-z0ivkoo [Binary Search] 0.0.1 1:0>2:0>4:20>9:210 240 1   " | ./float -d tests/flows/ -t tests/task_template.txt
+
+echo "FLOW [2025-03-10T03:51:17.361Z] 1741578677360-z0ivkoo [Binary Search] 0.0.1 1:0>2:0>4:20>9:210 0 1   " | ./float -d tests/flows/ -t tests/task_template.txt --st 30
+

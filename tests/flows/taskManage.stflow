@@ -1,0 +1,23 @@
+# task_manager.stflow
+
+FLOW: Create Task
+  received request
+  # validating task data
+  stored task in database
+  task created
+
+FLOW: Get All Tasks
+extra: header
+  fetching tasks
+  retrieving all tasks
+  IF condition
+    tasks fetched
+
+FLOW: Get Task By ID
+  received request
+  fetched task from database
+  IF task doesn't exist
+    ERR task not found
+    END 404
+  ELSE
+    task retrieved
